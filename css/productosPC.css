@@ -1,0 +1,199 @@
+/* ==========================================*/
+/* PC */
+@media (min-width: 991px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Arial', sans-serif;
+    }
+    
+    body {
+        background-color: #ffffff;
+        color: #000000;
+    }
+
+
+    /* ==========================================*/
+    /*BARRA NAVEGACION*/
+    .navbar {
+        background-color: #ffffff;
+        color: #000000;
+        padding: 1rem;
+        text-align: center;
+        border-bottom: 2px solid #000000;
+    }
+    
+    .navbar h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        color: #000000;
+    }
+    
+    .navbar ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        align-items: center; /* Alinea verticalmente los elementos de la lista */
+    }
+    
+    .navbar ul li a {
+        color: #000000;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+    
+    .navbar ul li a:hover {
+        text-decoration: underline;
+    }
+
+    /*IMG LOGIN*/
+
+    .navbar ul li.login {
+        position: absolute;
+        left: 1rem;
+        top: 10px;
+    }
+
+    .navbar ul li.login img {
+        width: 50px; /* Ajusta el tamaño de la imagen */
+        height: auto;
+        vertical-align: middle; /* Alinea la imagen verticalmente con el texto */
+    }
+    /*IMG LOGIN*/
+
+    /*IMG LOGOUT*/
+
+    .navbar ul li.logout {
+        position: absolute;
+        right: 1rem;
+        top: 58px;
+    }
+
+    .navbar ul li.logout img {
+        width: 50px; /* Ajusta el tamaño de la imagen */
+        height: auto;
+        vertical-align: middle; /* Alinea la imagen verticalmente con el texto */
+    }
+    /*IMG LOGOUT*/
+
+        /*IMG Carrito*/
+
+        .navbar ul li.carrito {
+            position: absolute;
+            right: 1rem;
+            top: 5px;
+        }
+    
+        .navbar ul li.carrito img {
+            width: 50px; /* Ajusta el tamaño de la imagen */
+            height: auto;
+            vertical-align: middle; /* Alinea la imagen verticalmente con el texto */
+        }
+        /*IMG Carrito*/
+
+    /* ==========================================*/
+    /*BARRA NAVEGACION*/
+
+    /* ==========================================*/
+    /*LISTA PRODUCTOS*/
+    .products-grid {
+        display: flex;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajusta el ancho mínimo de los productos */
+        gap: 20px;
+        padding: 2rem;
+    }
+    
+    .product-item {
+        border: 1px solid #000000;
+        padding: 1rem;
+        text-align: center;
+        background-color: white;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        /* Opcional: Ajusta el ancho máximo si quieres limitar el tamaño en pantallas grandes */
+        max-width: 250px; 
+    }
+    
+    .product-item img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+        border: 1px solid #000000;
+    }
+    
+    .product-item h2 {
+        font-size: 1.25rem; /* Tamaño de fuente reducido */
+        margin-bottom: 0.5rem;
+        color: #000000;
+    }
+    
+    .product-item p {
+        font-size: 0.875rem; /* Tamaño de fuente reducido */
+        margin-bottom: 0.5rem;
+        color: #666666;
+    }
+    
+    .product-item:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    
+    /* ==========================================*/
+    /*LISTA PRODUCTOS*/
+    
+    footer {
+        background-color: #ffffff;
+        color: #000000;
+        text-align: center;
+        padding: 1rem;
+        border-top: 2px solid #000000;
+        margin-top: 2rem;
+    }
+
+    /* ==========================================*/
+    /*BUSCADOR*/
+    .form-container {
+        text-align: right;
+        margin: 20px;
+    }
+    
+    .form-container form {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .form-container label {
+        color: black;
+        margin-right: 10px;
+        font-weight: bold;
+    }
+    
+    .form-container select,
+    .form-container button {
+        background-color: white;
+        color: black;
+        border: 2px solid black;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 14px;
+        margin-right: 10px;
+    }
+    
+    .form-container select:hover,
+    .form-container button:hover {
+        background-color: black;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .form-container button {
+        margin-right: 0;
+    }
+/* ==========================================*/
+    /*BUSCADOR*/
+    
+}

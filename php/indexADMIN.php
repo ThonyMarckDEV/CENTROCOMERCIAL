@@ -3,20 +3,30 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/productosPC.css">
-        <link rel="stylesheet" href="../css/productosMobile.css">
-        <link rel="stylesheet" href="../css/sidebarPC.css">
-        <link rel="stylesheet" href="../css/sidebarmobile.css">
+        <link rel="stylesheet" href="../css/indexADMINPC.css">
+        <link rel="stylesheet" href="../css/indexADMINMobile.css">
     </head>
+
     <body>
         <header class="navbar">
             <h1>Centro Comercial</h1>
-            <?php include 'navbarUSER.php'; ?>
+            <nav>
+                <ul>
+                    <li class="login">
+                        <a href="perfil.php">
+                            <img src="../img/sesion.png" alt="Iniciar sesión">
+                        </a>
+                    </li>
+                    <li><a href="#">Agregar Productos</a></li>
+                    <li><a href="#">Administrar ventas</a></li>
+                    <li class="logout">
+                        <a href="/php/logout.php">
+                            <img src="../img/logout.jpg" alt="Cerrar sesión">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </header>
-
-       
-        <!-- Inclusión del Sidebar -->
-        <?php include 'sidebar.php'; ?>
 
         <div id="main">
             <main class="product-list">
@@ -42,14 +52,16 @@
                         <button type="submit">Buscar</button>
                     </form>
                 </div>
-                <?php include '../listarproductos.php'; ?>
+              
             </main>
         </div>
 
+        <main class="product-list">
+        <?php include '../listarproductos.php'; ?>
+        </main>
+    
         <footer>
             <p>&copy; 2024 Centro Comercial. Todos los derechos reservados.</p>
         </footer>
-
-        <script src="../js/sidebar.js"></script>
     </body>
 </html>

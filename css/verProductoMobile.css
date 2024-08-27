@@ -1,0 +1,172 @@
+/* ==========================================*/
+/* MOBILE */
+@media (max-width: 767px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Arial', sans-serif;
+    }
+    
+    body {
+        background-color: #ffffff;
+        color: #000000;
+    }
+
+    .product-details {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .product-details img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .product-info {
+        flex: 1;
+        margin-left: 20px;
+    }
+    
+    .product-info h1 {
+        font-size: 2em;
+        margin: 0;
+        color: #333;
+    }
+    
+    .product-info p {
+        font-size: 1.2em;
+        margin: 10px 0;
+        color: #555;
+    }
+    
+    .product-info p strong {
+        color: #333;
+    }
+    
+    .product-info form {
+        margin-top: 20px;
+    }
+    
+    .product-info label {
+        font-size: 1em;
+        margin-right: 10px;
+        color: #333;
+    }
+    
+    .product-info input[type="number"] {
+        font-size: 1em;
+        padding: 5px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        width: 100px;
+        margin-right: 10px;
+    }
+    
+    .product-info button {
+        font-size: 1em;
+        padding: 10px 20px;
+        color: #fff;
+        background-color: #000000;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .product-info button:hover {
+        background-color: #585c59;
+    }
+    /* ==========================================*/
+    /*BARRA NAVEGACION*/
+    .navbar {
+        background-color: #ffffff;
+        color: #000000;
+        padding: 1.5rem;
+        text-align: center;
+        border-bottom: 2px solid #000000;
+    }
+    .navbar h1 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        color: #000000;
+    }
+    
+    .navbar ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        align-items: center; /* Alinea verticalmente los elementos de la lista */
+    }
+
+    .navbar ul li a {
+        color: #000000;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+    
+    
+    .navbar ul li a:hover {
+        text-decoration: underline;
+    }
+
+    /*IMG LOGIN*/
+
+    .navbar ul li.login {
+        position: absolute;
+        left: 1rem;
+        top: 10px;
+    }
+
+    .navbar ul li.login img {
+        width: 50px; /* Ajusta el tamaño de la imagen */
+        height: auto;
+        vertical-align: middle; /* Alinea la imagen verticalmente con el texto */
+    }
+    /*IMG LOGIN*/
+
+    /*IMG LOGOUT*/
+
+    .navbar ul li.logout {
+        position: absolute;
+        right: 1rem;
+        top: 58px;
+    }
+
+    .navbar ul li.logout img {
+        width: 50px; /* Ajusta el tamaño de la imagen */
+        height: auto;
+        vertical-align: middle; /* Alinea la imagen verticalmente con el texto */
+    }
+    /*IMG LOGOUT*/
+
+        /*IMG Carrito*/
+
+        .navbar ul li.carrito {
+            position: absolute;
+            right: 1rem;
+            top: 5px;
+        }
+    
+        .navbar ul li.carrito img {
+            width: 50px; /* Ajusta el tamaño de la imagen */
+            height: auto;
+            vertical-align: middle; /* Alinea la imagen verticalmente con el texto */
+        }
+        /*IMG Carrito*/
+
+
+    /* ==========================================*/
+    /*BARRA NAVEGACION*/
+    
+}
