@@ -127,8 +127,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['process'])) {
 <head>
     <meta charset="UTF-8">
     <title>Seleccionar Método de Pago</title>
-    <link rel="stylesheet" href="../css/comprarPC.css">
     <link rel="stylesheet" href="../css/comprarMobile.css">
+    <link rel="stylesheet" href="../css/comprarPC.css">
 </head>
 <body>
 
