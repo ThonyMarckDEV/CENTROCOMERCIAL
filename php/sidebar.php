@@ -63,7 +63,7 @@
                 <div class="cart-total">
                     <p><strong>Total:</strong> S/.<?php echo number_format($total, 2); ?></p>
                 </div>
-                        <!-- Botón para realizar la compra -->
+                <!-- Botón para realizar la compra -->
                 <div class="cart-checkout">
                     <a href="comprar.php" class="checkout-btn">Comprar</a>
                 </div>
