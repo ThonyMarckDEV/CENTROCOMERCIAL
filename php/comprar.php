@@ -137,6 +137,198 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['process'])) {
             <?php include 'navbarUSER.php'; ?>
         </header>
 
+        <style>
+                    /* Estilos generales para la página */
+    body {
+        font-family: Arial, sans-serif;
+        color: #333;
+        background-color: #f5f5f5; /* Fondo claro para un contraste elegante */
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 80%;
+        max-width: 1200px;
+        margin: 20px auto;
+        background-color: #fff; /* Fondo blanco para el contenedor */
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para darle profundidad */
+    }
+
+    h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #000; /* Títulos en negro para resaltar */
+    }
+
+    h2 {
+        font-size: 18px;
+        margin-bottom: 15px;
+        color: #000; /* Subtítulos en negro */
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cart-item {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #ddd; /* Línea divisoria entre los artículos */
+        padding: 10px 0;
+    }
+
+    .cart-item img {
+        width: 80px; /* Tamaño fijo para las imágenes */
+        height: 80px;
+        object-fit: cover;
+        border-radius: 4px;
+        margin-right: 15px;
+    }
+
+    .cart-item-details {
+        flex: 1;
+    }
+
+    .product-name,
+    .product-quantity,
+    .product-price,
+    .product-subtotal {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .product-name {
+        font-weight: bold;
+    }
+
+    p {
+        margin: 5px 0;
+    }
+
+    label {
+        margin-top: 15px;
+        font-weight: bold;
+        color: #000;
+    }
+
+    select {
+        padding: 10px;
+        border: 1px solid #ccc; /* Borde gris claro */
+        border-radius: 4px;
+        background-color: #fff;
+        color: #333;
+        font-size: 14px;
+    }
+
+    button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        background-color: #000; /* Botón negro */
+        color: #fff; /* Texto blanco en el botón */
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #333; /* Botón negro más oscuro al pasar el ratón */
+    }
+
+    p strong {
+        font-weight: bold;
+    }
+
+    /* ==========================================*/
+    /*BARRA NAVEGACION*/
+    .navbar {
+        background-color: #ffffff;
+        color: #000000;
+        padding: 1.5rem;
+        text-align: center;
+        border-bottom: 2px solid #000000;
+    }
+    .navbar h1 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        color: #000000;
+    }
+    
+    .navbar ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        align-items: center; /* Alinea verticalmente los elementos de la lista */
+    }
+
+    .navbar ul li a {
+        color: #000000;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+    
+    
+    .navbar ul li a:hover {
+        text-decoration: underline;
+    }
+
+    /*IMG LOGIN*/
+
+    .navbar ul li.login {
+        position: absolute;
+        left: 1rem;
+        top: 10px;
+    }
+
+    .navbar ul li.login img {
+        width: 50px; /* Ajusta el tamaño de la imagen */
+        height: auto;
+        vertical-align: middle; /* Alinea la imagen verticalmente con el texto */
+    }
+    /*IMG LOGIN*/
+
+    /*IMG LOGOUT*/
+
+    .navbar ul li.logout {
+        position: absolute;
+        right: 1rem;
+        top: 58px;
+    }
+
+    .navbar ul li.logout img {
+        width: 50px; /* Ajusta el tamaño de la imagen */
+        height: auto;
+        vertical-align: middle; /* Alinea la imagen verticalmente con el texto */
+    }
+    /*IMG LOGOUT*/
+
+        /*IMG Carrito*/
+
+        .navbar ul li.carrito {
+            position: absolute;
+            right: 1rem;
+            top: 5px;
+        }
+    
+        .navbar ul li.carrito img {
+            width: 50px; /* Ajusta el tamaño de la imagen */
+            height: auto;
+            vertical-align: middle; /* Alinea la imagen verticalmente con el texto */
+        }
+        /*IMG Carrito*/
+
+
+    /* ==========================================*/
+    /*BARRA NAVEGACION*/
+        </style>
+
 
     <div class="container">
         <h1>Seleccionar Método de Pago</h1>
