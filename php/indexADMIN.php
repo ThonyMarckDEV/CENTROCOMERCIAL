@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (!isset($_SESSION['correo']) || $_SESSION['tipo'] != 'ADMIN') {
+    header('Location: login.php');
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html>
     <head>
