@@ -1,0 +1,60 @@
+/* ==========================================*/
+/* MOBILE */
+@media (max-width: 767px) {
+    /* Estilos generales para la página */
+    body {
+        font-family: Arial, sans-serif;
+        color: #ffffff;
+        background-color: #f5f5f5; /* Fondo claro para un contraste elegante */
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 80%;
+        max-width: 1200px;
+        margin: 20px auto;
+        background-color: #fff; /* Fondo blanco para el contenedor */
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para darle profundidad */
+    }
+
+    h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #000; /* Títulos en negro para resaltar */
+    }
+
+    p {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    a {
+        color: #ffffff; /* Enlaces en negro para el esquema de colores */
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    a:hover {
+        text-decoration: underline; /* Subrayado al pasar el ratón */
+    }
+
+    button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        background-color: #000; /* Botón negro */
+        color: #fff; /* Texto blanco en el botón */
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #333; /* Botón negro más oscuro al pasar el ratón */
+    }
+
+}

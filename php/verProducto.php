@@ -30,17 +30,17 @@ if ($result->num_rows > 0) {
         </header>
 
         <div class="product-details">
-            <img src="data:image/jpeg;base64,<?php echo base64_encode($product['imagen']); ?>" alt="<?php echo $product['nombre']; ?>">
+            <img style="width: 300px; height: 300px;"  src="data:image/jpeg;base64,<?php echo base64_encode($product['imagen']); ?>" alt="<?php echo htmlspecialchars($product['nombre']); ?>">
             <div class="product-info">
-                <h1><?php echo $product['nombre']; ?></h1>
-                <p><?php echo $product['descripcion']; ?></p>
-                <p><strong>Precio:</strong> S/.<?php echo $product['precio']; ?></p>
-                <p><strong>Stock:</strong> <?php echo $product['stock']; ?></p>
+                <h1><?php echo htmlspecialchars($product['nombre']); ?></h1>
+                <p><?php echo htmlspecialchars($product['descripcion']); ?></p>
+                <p><strong>Precio:</strong> S/.<?php echo htmlspecialchars($product['precio']); ?></p>
+                <p><strong>Stock:</strong> <?php echo htmlspecialchars($product['stock']); ?></p>
                 
                 <form method="POST" action="agregarCarrito.php">
-                    <input type="hidden" name="id" value="<?php echo $product['id']; ?>">
+                    <input type="hidden" name="id" value="<?php echo htmlspecialchars($product['id']); ?>">
                     <label for="cantidad">Cantidad:</label>
-                    <input type="number" name="cantidad" id="cantidad" min="1" max="<?php echo $product['stock']; ?>" required>
+                    <input type="number" name="cantidad" id="cantidad" min="1" max="<?php echo htmlspecialchars($product['stock']); ?>" required>
                     <button type="submit">Agregar al Carrito</button>
                 </form>
             </div>
